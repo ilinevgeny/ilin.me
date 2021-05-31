@@ -43,10 +43,17 @@
     }
 </style>
 <div class="wrapper">
-<div class="photo">
-    <img src="img/me.jpg">
-</div>
-<div class="main" id="main">
+    <div class="photo">
+        <img src="img/me.jpg">
+    </div>
+    <div>Professional prevails</div><br>
+    <div class="contacts">
+        <span>contact me:</span><br>
+        <a target="_blank" href="https://t.me/EvgenyIlin">@EvgenyIlin</a>
+        <!--@todo: hide contact from spam-bots --><br>
+        <a href="mailto:evgeny@ilin.me">evgeny@ilin.me</a>
+    </div>
+    <div class="main" id="main">
 
 Bolid R&D 2019 -->
     Skills
@@ -96,7 +103,8 @@ LEXPRO Ltd  2011 — 2019
             -- внедрение Agile в процесс разработки, использование Kanban
 
 Start career in 2007.
-</div>
+
+    </div>
 </div>
 </body>
 </html>

@@ -35,10 +35,30 @@
     .photo img {
         width: 20%;
     }
-    @media (min-width: 100px) and (max-width: 480px)
-    {  .wrapper {
+    h4 {
+        margin-top: 1.5em;
+    }
+    .resume-title {
+        font-weight: 600;
+        margin-left: 1em;
+    }
+    .resume-description {
+        margin-left: 2em;
+    }
+
+    @media (min-width: 948px) and (max-width: 1280px) {
+
+    }
+    @media (min-width: 783px) and (max-width: 947px) {
+
+    }
+    @media (min-width: 481px) and (max-width: 782px) {
+
+    }
+    @media (min-width: 100px) and (max-width: 480px) {
+        .wrapper {
             width: 95%;
-        }
+         }
         .photo img {
             width: 55%;
         }
@@ -60,13 +80,13 @@
 Bolid R&D 2019 -->
     Skills
         UX/UI:
-            Mockuplus Classic
+            -- Mockuplus Classic
         Software:
-            C++, Qt, Boost, Postgresql, MSSQL
+            -- C++, Qt, Boost, Postgresql, MSSQL
         CI/CD:
-            Git, Cmake, Qmake, MsBuild, Teamcity, Travis CI, Bintray, Squish, Squish Test Center, Jira Software + Zephyr, NSIS
+            -- Git, Cmake, Qmake, MsBuild, Teamcity, Travis CI, Bintray, Squish, Squish Test Center, Jira Software + Zephyr, NSIS
 
-    Experience & Achievements:
+    Experience & Achievements
         UX/UI:
             -- Прототипирование кроссплатформенного десктоп-приложения
             -- Внедрение внутри компании стандартов UX для работы с данными
@@ -90,7 +110,7 @@ LEXPRO Ltd  2011 — 2019
         Техническое руководство проектами "Телемедицина", "Цифровая ферма":
             Постановка и контроль выполнения задач по проектам. Взаимодействие со стейкхолдерами. Взаимодействие с гос. органами.
 
-    Experience & Achievements:
+    Experience & Achievements
         Web Development:
             -- рефакторинг поиска юридической справочной системы
             -- улучшение качества поиска
@@ -99,8 +119,7 @@ LEXPRO Ltd  2011 — 2019
             -- улучшение процесса обновления системы
             -- организация мониторинга сервисов проекта
         CI/CD:
-            -- внедрение принципов CI/CD, платформа Jenkins. Внедрение автоматизации тестирования веб-части проекта,
-    платформа Selenium. Разработка тестов.
+            -- внедрение принципов CI/CD, платформа Jenkins. Внедрение автоматизации тестирования веб-части проекта, платформа Selenium. Разработка тестов.
         Руководство проектом:
             -- внедрение Agile в процесс разработки, использование Kanban
 
@@ -121,6 +140,12 @@ Start career in 2007.
     main_cv.innerHTML = main_cv.innerHTML.replace(/Skills|Experience.*/gm, function (match){
         return `<b>${match}</b>`;
     });
-    main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\n", "g"), "<br>");
-    main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\s", "g"), "&nbsp");
+    //main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\n", "g"), "<br>");
+     main_cv.innerHTML = main_cv.innerHTML.replace(/^\s+--.+/gm, function (match){
+         return `<div class="resume-description">${match}</div>`;
+     });
+    main_cv.innerHTML = main_cv.innerHTML.replace(/^\s.+:/gm, function (match){
+        return `<div class="resume-title">${match}</div>`;
+    });
+    //main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\s", "g"), "&nbsp");
 </script>

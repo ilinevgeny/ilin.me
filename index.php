@@ -20,9 +20,16 @@
         margin: 0;
         padding: 0;
     }
+    body {
+        font-family: Roboto;
+    }
     .main {
         /*font-family: 'Courier New', sans-serif;*/
         font-family: 'Roboto Condensed', sans-serif;
+    }
+    a {
+        font-size: 1.2em;
+        color: #c64a00;
     }
     .wrapper
     {
@@ -31,9 +38,17 @@
     }
     .photo {
         padding-top: 2vh;
+        padding-bottom: 2vh;
+        text-align: center;
     }
     .photo img {
-        width: 20%;
+        width: 15%;
+        border-radius: 15%;
+        box-shadow: 0px 0px 8px 0px #797979;
+        border: 1px solid #fff;
+    }
+    .slogan {
+        text-align: center;
     }
     h4 {
         margin-top: 1.5em;
@@ -44,6 +59,11 @@
     }
     .resume-description {
         margin-left: 2em;
+    }
+    .resume-chapter {
+        margin-top: .5em;
+        margin-bottom: .2em;
+        font-weight: 600;
     }
 
     @media (min-width: 948px) and (max-width: 1280px) {
@@ -68,7 +88,7 @@
     <div class="photo">
         <img src="img/me.jpg">
     </div>
-    <div>Professional prevails</div><br>
+    <div class="slogan">PROFESSIONALISM ABOVE ALL</div><br>
     <div class="contacts">
         <span>contact me:</span><br>
         <a target="_blank" href="https://t.me/EvgenyIlin">@EvgenyIlin</a>
@@ -76,7 +96,11 @@
         <a href="mailto:evgeny@ilin.me">evgeny@ilin.me</a>
     </div>
     <div class="main" id="main">
-
+        <div class="tools-container">
+            <span class="translate">en</span>
+            <span class="copy">copy</span>
+            <span class="print">print</span>
+        </div>
 Bolid R&D 2019 -->
     Skills
         UX/UI:
@@ -102,13 +126,13 @@ Bolid R&D 2019 -->
 LEXPRO Ltd  2011 — 2019
     Skills
         Web Development:
-            HTML5/CSS3, NodeJS, PHP, Phalcon, CakePHP, Sphinx, XSLT, WebDesign/UX
+            -- HTML5/CSS3, NodeJS, PHP, Phalcon, CakePHP, Sphinx, XSLT, WebDesign/UX
         DevOps:
-            OpenVZ, Docker, Zabbix
+            -- OpenVZ, Docker, Zabbix
         CI/CD:
-            Composer, Git, Selenium, Jenkins
+            -- Composer, Git, Selenium, Jenkins
         Техническое руководство проектами "Телемедицина", "Цифровая ферма":
-            Постановка и контроль выполнения задач по проектам. Взаимодействие со стейкхолдерами. Взаимодействие с гос. органами.
+            -- Постановка и контроль выполнения задач по проектам. Взаимодействие со стейкхолдерами. Взаимодействие с гос. органами
 
     Experience & Achievements
         Web Development:
@@ -138,7 +162,7 @@ Start career in 2007.
     })
 
     main_cv.innerHTML = main_cv.innerHTML.replace(/Skills|Experience.*/gm, function (match){
-        return `<b>${match}</b>`;
+        return `<div class="resume-chapter">${match}</div>`;
     });
     //main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\n", "g"), "<br>");
      main_cv.innerHTML = main_cv.innerHTML.replace(/^\s+--.+/gm, function (match){

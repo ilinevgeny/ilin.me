@@ -42,7 +42,7 @@
         text-align: center;
     }
     .photo img {
-        width: 15%;
+        width: 10%;
         border-radius: 15%;
         box-shadow: 0px 0px 8px 0px #797979;
         border: 1px solid #fff;
@@ -80,7 +80,7 @@
             width: 95%;
          }
         .photo img {
-            width: 55%;
+            width: 35%;
         }
     }
 </style>
@@ -88,7 +88,8 @@
     <div class="photo">
         <img src="img/me.jpg">
     </div>
-    <div class="slogan">PROFESSIONALISM ABOVE ALL</div><br>
+    <div class="slogan">PROFESSIONALISM ABOVE ALL</div>
+    <div class="short-about">Programmer, geek, infonobile</div>
     <div class="contacts">
         <span>contact me:</span><br>
         <a target="_blank" href="https://t.me/EvgenyIlin">@EvgenyIlin</a>

@@ -108,7 +108,7 @@
         <img src="img/me.jpg">
     </div>
     <div class="slogan">PROFESSIONALISM ABOVE ALL</div>
-    <div class="short-about">Programmer, geek, infonobile</div>
+    <div class="short-about">Programmer, geek, infonoble</div>
     <div class="contacts">
         <span>contact me:</span><br>
         <a target="_blank" href="https://t.me/EvgenyIlin">@EvgenyIlin</a>

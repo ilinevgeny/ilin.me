@@ -178,7 +178,10 @@ Hobby
     </div>
 </div>
 <div class="resume-description-en">
-Bolid R&D 2019 -->
+AGCSOFT 2022 -->
+    Skills
+        
+Bolid R&D 2019 -- february 2022
     Skills
         Software/Development:
             -- C++, Qt, Boost, PostgreSQL, MSSQL
@@ -229,7 +232,7 @@ LEXPRO Ltd, Moscow,  2011 — 2019
 
 Start career in 2007
 Hobby:
-    -- math, astrophysics, running, biking, diving.
+    -- math, astrophysics, running, biking, diving
 
 </div>
 </body>

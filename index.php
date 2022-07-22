@@ -124,7 +124,9 @@
     </div>
     <div class="main" id="main">
         <div class="resume-description-ru">
-Bolid R&D 2019 -->
+AGCSOFT 2022 -->
+UPDEVISION February 2022 -- March 2022
+Bolid R&D 2019 -- February 2022
     Skills
         Software/Development:
             -- C++, Qt, Boost, PostgreSQL, MSSQL
@@ -179,9 +181,8 @@ Hobby
 </div>
 <div class="resume-description-en">
 AGCSOFT 2022 -->
-    Skills
-        
-Bolid R&D 2019 -- february 2022
+UPDEVISION February 2022 -- March 2022
+Bolid R&D 2019 - February 2022
     Skills
         Software/Development:
             -- C++, Qt, Boost, PostgreSQL, MSSQL

@@ -124,9 +124,20 @@
     </div>
     <div class="main" id="main">
         <div class="resume-description-ru">
-AGCSOFT 2022 -->
-UPDEVISION February 2022 -- March 2022
-Bolid R&D 2019 -- February 2022
+AGCSOFT SIA, Riga, 2022 -->
+    Skills
+        Software/Development:
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL
+UPDEVISION, Remotely, February 2022 --> March 2022
+    Skills
+        Software/Development:
+            -- Laravel, Doctrine
+        Experience & Achievements:
+            -- Онбоардинг в проект my.yougiver.me
+            -- Работа с mailchimp
+            -- Разработка процесса кастомизации шаблонов рассылки из BackOffice
+
+Bolid R&D, Moscow, 2019 --> February 2022
     Skills
         Software/Development:
             -- C++, Qt, Boost, PostgreSQL, MSSQL
@@ -148,7 +159,7 @@ Bolid R&D 2019 -- February 2022
             -- Внедрение автоматизации тестирования графических приложений (Qt based) на базе Squish
             -- Внедрение практики выпуска приложения как целостного продукта
 
-LEXPRO Ltd  2011 — 2019
+LEXPRO Ltd, Moscow, 2011 — 2019
     Skills
         Web Development:
             -- HTML5/CSS3, NodeJS, PHP, Phalcon, CakePHP, Sphinx, XSLT, WebDesign/UX
@@ -180,11 +191,18 @@ Hobby
     </div>
 </div>
 <div class="resume-description-en">
-AGCSOFT 2022 -->
-UPDEVISION February 2022 -- March 2022
-Bolid R&D 2019 - February 2022
+AGCSOFT SIA, Riga, 2022 -->
+UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:
+            -- Laravel, Doctrine
+        Experience & Achievements:
+            -- Onboarding to my.yougiver.me project
+            -- Worked with Mailchimp service
+            -- Developed customizing mailing service in BO
+Bolid R&D, Moscow, 2019 --> February 2022
+    Skills
+    Software/Development:
             -- C++, Qt, Boost, PostgreSQL, MSSQL
     DevOps/CI/CD:
         -- Git, Cmake, Qmake, MsBuild, Teamcity, Travis CI, Bintray, Squish, Squish TC, Jira,  Zephyr, NSIS
@@ -203,9 +221,8 @@ Bolid R&D 2019 - February 2022
         -- Implementation of build process based on JetBrains Teamcity server
         -- Implementation of test automation for GUI application (Qt based) based on Squish + Zephyr
         -- Implementation of DevOps practice
-LEXPRO Ltd, Moscow,  2011 — 2019
+LEXPRO Ltd, Moscow,  2011 --> 2019
     Skills
-
     Web Development:
     -- HTML5/CSS3, NodeJS, PHP, Phalcon, CakePHP, Sphinx, XSLT, WebDesign/UX
     DevOps:
@@ -252,7 +269,7 @@ Hobby:
                 main_cv_en.innerHTML = tmp_html;
 
                 let headers = main_cv_ru.innerHTML.match(new RegExp("^\\w.*", "gm"));
-                //console.log(headers)
+                console.log(headers)
                 if(headers) {
                     headers.forEach((header) => {
                         main_cv_ru.innerHTML = main_cv_ru.innerHTML.replace(header, `<h4>${header}</h4>`);
@@ -302,10 +319,9 @@ Hobby:
         tools.classList.remove('tools-container-printable')
 
     }
-
     let main_cv = document.querySelector('.main');
     let headers = main_cv.innerHTML.match(new RegExp("^\\w.*", "gm"));
-    //console.log(headers)
+    console.log(headers)
     headers.forEach((header) => {
         main_cv.innerHTML = main_cv.innerHTML.replace(header, `<h4>${header}</h4>`);
     })

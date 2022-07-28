@@ -133,7 +133,7 @@ UPDEVISION, Remotely, February 2022 --> March 2022
         Software/Development:
             -- Laravel, Doctrine
         Experience & Achievements:
-            -- Онбоардинг в проект my.yougiver.me
+            -- Онбоардинг в проект <a href="https://my.yougiver.me" target="_blank">my.yougiver.me</a>
             -- Работа с mailchimp
             -- Разработка процесса кастомизации шаблонов рассылки из BackOffice
 
@@ -192,6 +192,9 @@ Hobby
 </div>
 <div class="resume-description-en">
 AGCSOFT SIA, Riga, 2022 -->
+	Skills
+        Software/Development:
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL
 UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:

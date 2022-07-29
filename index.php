@@ -127,14 +127,16 @@
 AGCSOFT SIA, Riga, 2022 -->
     Skills
         Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, PHPUnit
+		Experience & Achievements:
+			-- TDD, DDD, implement clean architecture principles
 UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:
-            -- Laravel, Doctrine
+            -- Laravel 5.8, Doctrine, PHPUnit
         Experience & Achievements:
-            -- Онбоардинг в проект <a href="https://my.yougiver.me" target="_blank">my.yougiver.me</a>
-            -- Работа с mailchimp
+            -- Онбоардинг в проект my.yougiver.me
+            -- Работа с API MailChimp
             -- Разработка процесса кастомизации шаблонов рассылки из BackOffice
 
 Bolid R&D, Moscow, 2019 --> February 2022
@@ -146,7 +148,7 @@ Bolid R&D, Moscow, 2019 --> February 2022
         UX/UI:
         -- Mockuplus Classic
 
-    Experience & Achievements
+    Experience & Achievements:
         UX/UI:
             -- Прототипирование кроссплатформенного десктоп-приложения
             -- Внедрение внутри компании стандартов UX для работы с данными
@@ -194,11 +196,11 @@ Hobby
 AGCSOFT SIA, Riga, 2022 -->
 	Skills
         Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, PHPUnit
 UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:
-            -- Laravel, Doctrine
+            -- Laravel 5.8, Doctrine, PHPUnit
         Experience & Achievements:
             -- Onboarding to my.yougiver.me project
             -- Worked with Mailchimp service

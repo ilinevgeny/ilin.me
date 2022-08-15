@@ -122,7 +122,7 @@
 AGCSOFT SIA, Riga, 2022 -->
     Skills
         Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, Swagger
 UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:

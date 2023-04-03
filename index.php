@@ -24,7 +24,7 @@
     }
 
     a {
-        font-size: 1.2em;
+        font-size: 1.15em;
         color: #c64a00;
     }
     .wrapper
@@ -53,6 +53,8 @@
     }
     h4 {
         margin-top: 1.5em;
+        background: #efefef;
+        padding: 3px;
     }
     .tools-container {
         float: right;

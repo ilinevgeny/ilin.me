@@ -124,7 +124,7 @@
 AGCSOFT SIA, Riga, 2022 -->
     Skills
         Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, Swagger
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB, Swagger
 UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:
@@ -191,7 +191,7 @@ Hobby
 AGCSOFT SIA, Riga, 2022 -->
     Skills
         Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, Swagger
+            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB,  Swagger
 UPDEVISION, Remotely, February 2022 --> March 2022
     Skills
         Software/Development:

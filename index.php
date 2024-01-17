@@ -121,7 +121,14 @@
     </div>
     <div class="main" id="main">
         <div class="resume-description-ru">
-AGCSOFT SIA, Riga, 2022 -->
+Dynatech SIA, Riga, 2023 September --> now
+    Skills
+        Software/Development:
+            -- Symfony 5, Doctrine, Postgresql, MongoDB, Swagger
+    Experience & Achievements
+            -- Banking transaction processing, Reconciliation, Scoring cards
+
+AGCSOFT SIA, Riga, 2022 --> August 2023
     Skills
         Software/Development:
             -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB, Swagger
@@ -188,7 +195,14 @@ Hobby
     </div>
 </div>
 <div class="resume-description-en">
-AGCSOFT SIA, Riga, 2022 -->
+Dynatech SIA, Riga, 2023 September --> now
+    Skills
+        Software/Development:
+            -- Symfony 5, Doctrine, Postgresql, MongoDB, Swagger
+    Experience & Achievements
+        -- Banking transaction processing, Reconciliation, Scoring cards
+
+AGCSOFT SIA, Riga, 2022 --> August 2023
     Skills
         Software/Development:
             -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB,  Swagger

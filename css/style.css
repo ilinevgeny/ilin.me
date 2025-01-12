@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main {
+    /*font-family: 'Courier New', sans-serif;*/
+}
+
+a {
+    font-size: 1.35em;
+    color: #676c8c;
+}
+.wrapper
+{
+    width: 50%;
+    margin: 0 auto;
+}
+.wrapper-printable
+{
+    width: 100%;
+    font-size: .65em;
+}
+.wrapper-printable .main .resume-description-en h4{
+    margin-top: .9em;
+}
+.contacts {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: fit-content;
+}
+.contacts a {
+    text-decoration: none;
+    color: #676c8c;
+    display: flex;
+}
+.photo {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: left;
+}
+.photo img {
+    width: 10%;
+    border-radius: 15%;
+    box-shadow: 0px 0px 8px 0px #797979;
+    border: 1px solid #fff;
+}
+.slogan {
+    text-align: center;
+}
+h4 {
+    margin-top: 1.5em;
+    background: #efefef;
+    padding: 3px;
+}
+.books-list, .code-projects {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.books-list ul, .code-projects ul {
+    list-style-type: none;
+}
+.books-list ul li, .code-projects ul li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.code-projects ul li a {
+    text-decoration: none;
+    font-size: 1em;
+}
+.tools-container {
+    float: right;
+    top: -15px;
+    position: relative;
+    font-size: .85em;
+}
+.tools-container-printable
+{
+    display: none;
+}
+.resume-title {
+    font-weight: 600;
+    margin-left: 1em;
+}
+.resume-description {
+    margin-left: 2em;
+}
+.resume-chapter {
+    margin-top: .5em;
+    margin-bottom: .2em;
+    font-weight: 600;
+}
+
+.copied {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+@media (min-width: 948px) and (max-width: 1280px) {
+
+}
+@media (min-width: 783px) and (max-width: 947px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+@media (min-width: 481px) and (max-width: 782px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+@media (min-width: 100px) and (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+    }
+    .photo img {
+        width: 35%;
+    }
+    .tools-container {
+        float: unset;
+        font-size: 1em;
+    }
+}
+
+.resume-description-ru {
+    display: none;
+}

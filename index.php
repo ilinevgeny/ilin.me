@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>Evgeny Ilin's personal page and CV</title>
+    <title>Evgeny Ilin CV: PHP Backend Developer</title>
     <meta charset="utf-8">
     <meta name="yandex-verification" content="87086c37a62d6364" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -8,279 +8,156 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        font-family: Roboto;
-    }
-    .main {
-        /*font-family: 'Courier New', sans-serif;*/
-        font-family: 'Roboto Condensed', sans-serif;
-    }
 
-    a {
-        font-size: 1.15em;
-        color: #c64a00;
-    }
-    .wrapper
-    {
-        width: 50%;
-        margin: 0 auto;
-    }
-    .wrapper-printable
-    {
-        width: 100%;
-        font-size: .75em;
-    }
-    .photo {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        text-align: center;
-    }
-    .photo img {
-        width: 10%;
-        border-radius: 15%;
-        box-shadow: 0px 0px 8px 0px #797979;
-        border: 1px solid #fff;
-    }
-    .slogan {
-        text-align: center;
-    }
-    h4 {
-        margin-top: 1.5em;
-        background: #efefef;
-        padding: 3px;
-    }
-    .tools-container {
-        float: right;
-        top: -50px;
-        position: relative;
-        font-size: .85em;
-    }
-    .tools-container-printable
-    {
-        display: none;
-    }
-    .resume-title {
-        font-weight: 600;
-        margin-left: 1em;
-    }
-    .resume-description {
-        margin-left: 2em;
-    }
-    .resume-chapter {
-        margin-top: .5em;
-        margin-bottom: .2em;
-        font-weight: 600;
-    }
-
-    @media (min-width: 948px) and (max-width: 1280px) {
-
-    }
-    @media (min-width: 783px) and (max-width: 947px) {
-
-    }
-    @media (min-width: 481px) and (max-width: 782px) {
-
-    }
-    @media (min-width: 100px) and (max-width: 480px) {
-        .wrapper {
-            width: 95%;
-         }
-        .photo img {
-            width: 35%;
-        }
-    }
-    .resume-description-en {
-        display: none;
-    }
-</style>
 <div class="wrapper" id="wrapper">
     <div class="photo">
         <img src="img/me.jpg">
     </div>
-    <div class="slogan">PROFESSIONALISM ABOVE ALL</div>
-    <div class="short-about">Programmer, geek, infonoble</div>
+    <div class="short-about">PHP Backend Developer, geek, infonoble</div>
+    <div class="slogan">PROFESSION ABOVE ALL</div>
+
     <div class="contacts">
         <span>contact me:</span><br>
-        <a target="_blank" href="https://t.me/EvgenyIlin">@EvgenyIlin</a>
-        <!--@todo: hide contact from spam-bots --><br>
-        <a href="mailto:evgeny@ilin.me">evgeny@ilin.me</a>
+        <a target="_blank" href="https://t.me/EvgenyIlin">tg: @EvgenyIlin</a>
+        <a href="mailto:evgeny@ilin.me">mail: evgeny@ilin.me</a>
     </div>
     <div class="tools-container">
-        <span class="translate"><a id="translatelink" href="en">en</a></span>
+        <span class="translate"><a id="translatelink" href="ru">ru</a></span>
         <span class="copy"><a href="#">copy</a></span>
         <span class="print"><a href="#" onclick="printDocument('wrapper')">print</a></span>
-        <span><a href="/cv_ilin_en.pdf" target="_blank">download</a></span>
-        <span><a href="#" >share</a></span>
+        <span><a href="/Evgeny_Ilin_CV_PHP_Backend_Developer.pdf" target="_blank">download</a></span>
+        <span><a href="#" id="share" onclick="shareCV()">share</a></span>
     </div>
+    <div class="books-list">
+        <h4>Books</h4>
+        <ul>
+            <li>1. Eric Evans, "Domain-Driven Design: Tackling Complexity in the Heart of Software"</li>
+            <li>2. Martin Fowler, "Refactoring"</li>
+            <li>3. Robert Cecil Martin, "Clean Code"</li>
+            <li>4. Robert Cecil Martin, "Clean Architecture"</li>
+            <li>5. Matt Zandstra, "PHP Objects, Patterns and Practice"</li>
+        </ul>
+    </div>
+    <div class="code-projects">
+        <h4>code examples</h4>
+        <ul>
+            <li>1. <a href="https://github.com/ilinevgeny/notification_system_sf_test">Example of CQRS pattern</a></li>
+            <li>2. <a href=https://github.com/ilinevgeny/wtApp">Test application with DDD implementing</a></li>
+            <li>3. <a href="https://github.com/ilinevgeny/reconsiliation">Concept and example of Reconciliation process by Event sourcing pattern</a></li>
+            <li>4. <a href="https://bitbucket.org/geirby/evolution_k8s/src/master/">Test with DevOps skills: Go clients, k8s, Kafka, Prometheus, Grafana from scratch</a></li>
+        </ul>
+    </div>
+
     <div class="main" id="main">
-        <div class="resume-description-ru">
+        <div class="resume-description-en">
 Dynatech SIA, Riga, 2023 September --> now
-    Skills
-        Software/Development:
-            -- Symfony 5, Doctrine, Postgresql, MongoDB, Swagger
-    Experience & Achievements
-            -- Banking transaction processing, Reconciliation, Scoring cards
-
+    Software development:
+        -- PHP 5.3😭, PHP 7.2😅, PHP 8🤩 Symfony 7 😎, Doctrine, Postgresql, MongoDB, Swagger/OpenAPI
+    Experience & Achievements:
+            -- Banking transactions (Crassula), developing automated reconciliation
+            -- scoring cards
+            -- developing API for the risk processing core,
+            -- development of a back office for a ticketing system
 AGCSOFT SIA, Riga, 2022 --> August 2023
-    Skills
-        Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB, Swagger
+    Software development:
+        -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB,  Swagger
+        -- development of core sports betting system
 UPDEVISION, Remotely, February 2022 --> March 2022
-    Skills
-        Software/Development:
-            -- Laravel, Doctrine
-        Experience & Achievements:
-            -- Онбоардинг в проект my.yougiver.me
-            -- Работа с mailchimp
-            -- Разработка процесса кастомизации шаблонов рассылки из BackOffice
+    Software development:
+        -- Laravel, Doctrine
+    Experience & Achievements:
+        -- Working on with <a style="font-size: 1em" href="https://my.yougiver.me"> my.yougiver.me </a> project
 
 Bolid R&D, Moscow, 2019 --> February 2022
-    Skills
-        Software/Development:
-            -- C++, Qt, Boost, PostgreSQL, MSSQL
-        DevOps/CI/CD:
-            -- Git, Cmake, Qmake, MsBuild, Teamcity, Travis CI, Bintray, Squish, Squish TC, Jira, Zephyr, NSIS
-        UX/UI:
-        -- Mockuplus Classic
+    Software development:
+        -- C++, Qt, Boost, PostgresSQL, MSSQL
+        -- Git, Cmake, Qmake, MsBuild, Teamcity
+    Experience & Achievements:
+        -- development cross-platform enterprise fire security workstation "Orion X"
 
-    Experience & Achievements
-        UX/UI:
-            -- Прототипирование кроссплатформенного десктоп-приложения
-            -- Внедрение внутри компании стандартов UX для работы с данными
-        Software:
-            -- Обучение новому языку и его окружению. Успешный онбоардинг в течение полугода.
-            -- Реализация кроссплатформенного приложения конфигурируемого редактора БД
-            -- Реализация кроссплатформенного прикладного приложения для АРМ "Орион Х"
-        DevOps/CI/CD:
-            -- Внедрение сервера сборки на базе Teamcity
-            -- Внедрение автоматизации тестирования графических приложений (Qt based) на базе Squish
-            -- Внедрение практики выпуска приложения как целостного продукта
-
-LEXPRO Ltd, Moscow, 2011 — 2019
-    Skills
-        Web Development:
-            -- HTML5/CSS3, NodeJS, PHP, Phalcon, CakePHP, Sphinx, XSLT, WebDesign/UX
-        DevOps:
-            -- OpenVZ, Docker, Zabbix
-        CI/CD:
-            -- Composer, Git, Selenium, Jenkins
-        Техническое руководство проектами "Телемедицина", "Цифровая ферма":
-            -- Постановка и контроль выполнения задач по проектам. Взаимодействие со стейкхолдерами. Взаимодействие с гос. органами
-
-    Experience & Achievements
-        Web Development:
-            -- рефакторинг поиска юридической справочной системы
-            -- улучшение качества поиска
-        DevOps:
-            -- внедрение принципов контейнеризации на базе OpenVZ, внедрение микросервисности
-            -- улучшение процесса обновления системы
-            -- организация мониторинга сервисов проекта
-        CI/CD:
-            -- внедрение принципов CI/CD, платформа Jenkins. Внедрение автоматизации тестирования веб-части проекта, платформа Selenium. Разработка тестов.
-        Руководство проектом:
-            -- внедрение Agile в процесс разработки, использование Kanban
-
-Start career in 2007.
-
-Hobby
-        -- math, astrophysics, running, biking, diving.
-        </div>
-    </div>
-</div>
-<div class="resume-description-en">
-Dynatech SIA, Riga, 2023 September --> now
-    Skills
-        Software/Development:
-            -- Symfony 5, Doctrine, Postgresql, MongoDB, Swagger
-    Experience & Achievements
-        -- Banking transaction processing, Reconciliation, Scoring cards
-
-AGCSOFT SIA, Riga, 2022 --> August 2023
-    Skills
-        Software/Development:
-            -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB,  Swagger
-UPDEVISION, Remotely, February 2022 --> March 2022
-    Skills
-        Software/Development:
-            -- Laravel, Doctrine
-        Experience & Achievements:
-            -- Onboarding to my.yougiver.me project
-            -- Worked with Mailchimp service
-            -- Developed customizing mailing service in BO
-Bolid R&D, Moscow, 2019 --> February 2022
-    Skills
-    Software/Development:
-            -- C++, Qt, Boost, PostgreSQL, MSSQL
-    DevOps/CI/CD:
-        -- Git, Cmake, Qmake, MsBuild, Teamcity, Travis CI, Bintray, Squish, Squish TC, Jira,  Zephyr, NSIS
-    UX/UI:
-        -- Mockuplus Classic prototyping
-
-    Experience & Achievements
-    UX/UI:
-        -- Prototyping cross-platform desktop application
-        -- introducing in company UX standards for databases application
-    Software/Development:
-        -- Learning to C++ language.
-        -- Development cross-platform special database editor
-        -- Development cross-platform enterprise fire security workstation "Orion X"
-    DevOps/CI/CD:
-        -- Implementation of build process based on JetBrains Teamcity server
-        -- Implementation of test automation for GUI application (Qt based) based on Squish + Zephyr
-        -- Implementation of DevOps practice
 LEXPRO Ltd, Moscow,  2011 --> 2019
-    Skills
-    Web Development:
-    -- HTML5/CSS3, NodeJS, PHP, Phalcon, CakePHP, Sphinx, XSLT, WebDesign/UX
-    DevOps:
-    -- OpenVZ, Docker, Zabbix
-    CI/CD:
-    -- Composer, npm, Git, Selenium, Jenkins
-    Technical PM of "Telemedicine " && "Digital farm" projects:
-    -- Task settings and performance checks. Interaction with key stakeholders.
-
-    Experience & Achievements
-
-    Web Development:
-    -- refactored the legacy code base of legal search engine
-    -- improved of quality searching
-    DevOps:
-    -- Implemented of main DevOps principles containerization and virtualization based of OpenVZ
-    -- Implemented of microservice architecture
-    -- improved of DB update process
-    -- Implemented services monitoring system using Zabbix
-    CI/CD:
-    -- Implemented CI/CD principles  using Jenkins platform.
-    -- Implemented of web UI test automation using Selenium, developed a Selenium test cases
-    Leading of project:
-    -- using Agile in developing process, using Kanban board
+    Software development:
+        -- HTML5/CSS3, PHP, Phalcon, CakePHP, Sphinx, XSLT
+        -- Composer, npm, Git, Selenium, Jenkins
+        -- Technical management of the "Telemedicine" project:
+        -- Setting and monitoring the implementation of project tasks. Interaction with stakeholders.
+    Experience & Achievements:
+        -- refactored the legacy code base of legal search engine
+        -- improved of quality searching
+        -- Implemented of main DevOps principles containerization and virtualization based of OpenVZ
+        -- Implemented of microservice architecture
+        -- Implemented services monitoring system using Zabbix
+        -- Implemented CI/CD principles  using Jenkins platform.
+        -- Implemented of web UI test automation using Selenium, developed a Selenium test cases
 
 Start career in 2007
 Hobby:
     -- math, astrophysics, running, biking, diving
+        </div>
+        <div class="resume-description-ru">
+Dynatech SIA, Riga, 2023 September --> сейчас
+    Software development:
+        -- PHP 5.3😭, PHP 7.2😅, PHP 8🤩 Symfony 7 😎, Doctrine, Postgresql, MongoDB, Swagger/OpenAPI
+    Experience & Achievements:
+        -- Банкинг(Crassula), разработка автоматизации реконсиляции
+        -- скоринговые карты
+        -- разработка API ядра риск-процессинга
+        -- разработка бэкофиса для системы продажи билетов
 
+AGCSOFT SIA, Riga, 2022 --> August 2023
+    Software development:
+    -- Symfony 5, Phalcon, Phinx, Doctrine, Redis, RabbitMQ, MySQL, MongoDB, Swagger
+    -- разработка ядра для платформы ставок
+
+UPDEVISION, Remotely, February 2022 --> March 2022
+    Software development:
+    -- Laravel, Doctrine
+    Experience & Achievements:
+    -- Работа над проектом <a style="font-size: 1em" href="https://my.yougiver.me"> my.yougiver.me </a>
+
+Bolid R&D, Moscow, 2019 --> February 2022
+    Software development:
+    -- C++, Qt, Boost, PostgresSQL, MSSQL
+    -- Git, Cmake, Qmake, MsBuild, Teamcity
+    Experience & Achievements:
+    -- Реализация кроссплатформенного прикладного приложения для АРМ "Орион Х"
+
+LEXPRO Ltd, Moscow, 2011 --> 2019
+    Software development:
+    -- HTML5/CSS3, PHP, Phalcon, CakePHP, Sphinx, XSLT
+    -- Composer, Git, Selenium, Jenkins
+    -- Техническое руководство проектом "Телемедицина":
+    -- Постановка и контроль выполнения задач по проектам. Взаимодействие со стейкхолдерами.
+    Experience & Achievements:
+    -- рефакторинг поиска юридической справочной системы
+    -- улучшение качества поиска
+    -- внедрение принципов контейнеризации на базе OpenVZ
+    -- внедрение принципов CI/CD, платформа Jenkins.
+    -- Внедрение автоматизации тестирования веб-части проекта, платформа Selenium.
+
+Start career in 2007.
+
+Hobby
+    -- math, astrophysics, running, biking, diving.
+        </div>
+    </div>
 </div>
+
+
 </body>
 </html>
 <script>
     let translateCV = (langName) => {
-        let currentLang = (langName.getAttribute('href') == 'en') ? 'ru' : 'en';
+        let currentLang = (langName.getAttribute('href') === 'en') ? 'ru' : 'en';
         switch (langName.getAttribute('href')) {
-            case 'en' :
+            case 'ru' :
             {
-                let main_cv = document.querySelector('.main');
                 let main_cv_en = document.querySelector('.resume-description-en');
                 let main_cv_ru = document.querySelector('.resume-description-ru');
-                let tmp_html = main_cv_ru.innerHTML;
-                main_cv_ru.innerHTML = main_cv_en.innerHTML;
-                main_cv_en.innerHTML = tmp_html;
+                let tmp_html = main_cv_en.innerHTML;
 
                 let headers = main_cv_ru.innerHTML.match(new RegExp("^\\w.*", "gm"));
                 console.log(headers)
@@ -289,37 +166,44 @@ Hobby:
                         main_cv_ru.innerHTML = main_cv_ru.innerHTML.replace(header, `<h4>${header}</h4>`);
                     })
                 }
-
-                main_cv_ru.innerHTML = main_cv_ru.innerHTML.replace(/Skills|Experience.*/gm, function (match){
-                    return `<div class="resume-chapter">${match}</div>`;
-                });
-                //main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\n", "g"), "<br>");
+                //
                 main_cv_ru.innerHTML = main_cv_ru.innerHTML.replace(/^\s+--.+/gm, function (match){
                     return `<div class="resume-description">${match}</div>`;
                 });
                 main_cv_ru.innerHTML = main_cv_ru.innerHTML.replace(/^\s.+:/gm, function (match){
                     return `<div class="resume-title">${match}</div>`;
                 });
-
+                main_cv_en.innerHTML = main_cv_ru.innerHTML;
+                main_cv_ru.innerHTML = tmp_html;
                 break;
             }
-            case 'ru' :
+            case 'en' :
             {
-                let main_cv_en = document.querySelector('.resume-description-en');
-                let main_cv_ru = document.querySelector('.resume-description-ru');
+                let main_cv_ru = document.querySelector('.resume-description-en');
+                let main_cv_en = document.querySelector('.resume-description-ru');
                 let tmp_html = main_cv_ru.innerHTML;
                 main_cv_ru.innerHTML = main_cv_en.innerHTML;
                 main_cv_en.innerHTML = tmp_html;
-
-
                 break;
             }
-
         }
         langName.setAttribute('href', currentLang);
         langName.innerHTML = currentLang;
     }
 
+    let main_cv = document.querySelector('.resume-description-en');
+    let headers = main_cv.innerHTML.match(new RegExp("^\\w.*", "gm"));
+    // console.log(headers)
+    headers.forEach((header) => {
+        main_cv.innerHTML = main_cv.innerHTML.replace(header, `<h4>${header}</h4>`);
+    })
+
+     main_cv.innerHTML = main_cv.innerHTML.replace(/^\s+--.+/gm, function (match){
+         return `<div class="resume-description">${match}</div>`;
+     });
+    main_cv.innerHTML = main_cv.innerHTML.replace(/^\s.+:/gm, function (match){
+        return `<div class="resume-title">${match}</div>`;
+    });
 
     function printDocument(documentId)
     {
@@ -333,24 +217,23 @@ Hobby:
         tools.classList.remove('tools-container-printable')
 
     }
-    let main_cv = document.querySelector('.main');
-    let headers = main_cv.innerHTML.match(new RegExp("^\\w.*", "gm"));
-    console.log(headers)
-    headers.forEach((header) => {
-        main_cv.innerHTML = main_cv.innerHTML.replace(header, `<h4>${header}</h4>`);
-    })
 
-    main_cv.innerHTML = main_cv.innerHTML.replace(/Skills|Experience.*/gm, function (match){
-        return `<div class="resume-chapter">${match}</div>`;
-    });
-    //main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\n", "g"), "<br>");
-     main_cv.innerHTML = main_cv.innerHTML.replace(/^\s+--.+/gm, function (match){
-         return `<div class="resume-description">${match}</div>`;
-     });
-    main_cv.innerHTML = main_cv.innerHTML.replace(/^\s.+:/gm, function (match){
-        return `<div class="resume-title">${match}</div>`;
-    });
-    //main_cv.innerHTML = main_cv.innerHTML.replace(new RegExp("\\s", "g"), "&nbsp");
+    function shareCV() {
+        let text = 'http://ilin.me';
+        navigator.clipboard.writeText(text).then(() => {
+            let shareLink = document.querySelector('a[onclick*=\'shareCV\']');
+            let originalText = shareLink.innerHTML;
+            shareLink.innerHTML = 'copied';
+            shareLink.classList.add('copied');
+            setTimeout(() => {
+                shareLink.innerHTML = originalText;
+                shareLink.classList.remove('copied');
+            }, 1000);
+
+        }, (err) => {
+            console.error('Could not copy text: ', err);
+        });
+    }
     document.getElementById('translatelink').addEventListener("click", function (event){
         console.log(event.target)
             event.preventDefault();

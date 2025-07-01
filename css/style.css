@@ -26,9 +26,21 @@ a {
 .wrapper-printable .main .resume-description-en h4{
     margin-top: .9em;
 }
-.contacts {
+.short-about {
     margin-top: 1em;
     margin-bottom: 1em;
+    font-size: 1.2em;
+}
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.contacts {
+    flex: 1;
     width: fit-content;
 }
 .contacts a {
@@ -37,12 +49,11 @@ a {
     display: flex;
 }
 .photo {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    text-align: left;
+    flex: 1;
+    text-align: center;
 }
 .photo img {
-    width: 10%;
+    width: 80px;
     border-radius: 15%;
     box-shadow: 0px 0px 8px 0px #797979;
     border: 1px solid #fff;
@@ -59,10 +70,10 @@ h4 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.books-list ul, .code-projects ul {
+ul {
     list-style-type: none;
 }
-.books-list ul li, .code-projects ul li {
+ul li {
     margin-top: .5em;
     margin-bottom: .5em;
 }
@@ -72,9 +83,8 @@ h4 {
     font-size: 1em;
 }
 .tools-container {
-    float: right;
-    top: -15px;
-    position: relative;
+    flex: 1;
+    text-align: right;
     font-size: .85em;
 }
 .tools-container-printable
@@ -119,15 +129,62 @@ h4 {
     .wrapper {
         width: 95%;
     }
-    .photo img {
-        width: 35%;
+    .flex-row-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .photo {
+        display: none;
     }
     .tools-container {
-        float: unset;
+        text-align: left;
         font-size: 1em;
     }
 }
 
 .resume-description-ru {
     display: none;
+}
+
+/* Collapsible styles */
+.collapsible {
+    cursor: pointer;
+    position: relative;
+}
+
+.collapsible::after {
+    content: '\002B'; /* Plus sign */
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+}
+
+.collapsible.active::after {
+    content: '\2212'; /* Minus sign */
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content.active {
+    max-height: 100px; /* Adjust based on content */
+}
+
+/* Print styles */
+@media print {
+    .collapsible-content {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .collapsible::after {
+        display: none; /* Hide the plus/minus signs when printing */
+    }
+
+    .code-projects {
+        display: none; /* Hide code examples when printing */
+    }
 }

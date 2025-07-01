@@ -13,23 +13,25 @@
 <body>
 
 <div class="wrapper" id="wrapper">
-    <div class="photo">
-        <img src="img/me.jpg">
-    </div>
-    <div class="short-about">PHP Backend Developer, geek, infonoble</div>
+    <div class="short-about">PHP Backend Developer</div>
     <div class="slogan">PROFESSION ABOVE ALL</div>
 
-    <div class="contacts">
-        <span>contact me:</span><br>
-        <a target="_blank" href="https://t.me/EvgenyIlin">tg: @EvgenyIlin</a>
-        <a href="mailto:evgeny@ilin.me">mail: evgeny@ilin.me</a>
-    </div>
-    <div class="tools-container">
-        <span class="translate"><a id="translatelink" href="ru">ru</a></span>
-        <span class="copy"><a href="#">copy</a></span>
-        <span class="print"><a href="#" onclick="printDocument('wrapper')">print</a></span>
-        <span><a href="/Evgeny_Ilin_CV_PHP_Backend_Developer.pdf" target="_blank">download</a></span>
-        <span><a href="#" id="share" onclick="shareCV()">share</a></span>
+    <div class="flex-row-container">
+        <div class="contacts">
+            <span>contact me:</span><br>
+            <a target="_blank" href="https://t.me/EvgenyIlin">tg: @EvgenyIlin</a>
+            <a href="mailto:evgeny@ilin.me">mail: evgeny@ilin.me</a>
+        </div>
+        <div class="photo">
+            <img src="img/me.jpg">
+        </div>
+        <div class="tools-container">
+            <span class="translate"><a id="translatelink" href="ru">ru</a></span>
+            <span class="copy"><a href="#">copy</a></span>
+            <span class="print"><a href="#" onclick="printDocument('wrapper')">print</a></span>
+            <span><a href="/Evgeny_Ilin_CV_PHP_Backend_Developer.pdf" target="_blank">download</a></span>
+            <span><a href="#" id="share" onclick="shareCV()">share</a></span>
+        </div>
     </div>
     <div class="books-list">
         <h4>Books</h4>
@@ -39,6 +41,22 @@
             <li>3. Robert Cecil Martin, "Clean Code"</li>
             <li>4. Robert Cecil Martin, "Clean Architecture"</li>
             <li>5. Matt Zandstra, "PHP Objects, Patterns and Practice"</li>
+        </ul>
+    </div>
+    <div class="langs">
+        <h4 class="collapsible">Languages</h4>
+        <ul class="collapsible-content">
+            <li>English - C1</li>
+            <li>Russian - native</li>
+            <li>Ukrainian - native</li>
+            <li>Latvian - A2</li>
+        </ul>
+    </div>
+    <div class="salary">
+        <h4 class="collapsible">Salary</h4>
+        <ul class="collapsible-content">
+            <li>EUR 5000 - 5300 gross</li>
+            <li>USD 5500 - 6000 gross</li>
         </ul>
     </div>
     <div class="code-projects">
@@ -51,7 +69,17 @@
             <li>5. <a href="https://github.com/ilinevgeny/transposeapp/">Test application with algorithm of transposition</a></li>
         </ul>
     </div>
-
+    <div class="skills">
+        <h4>Skills</h4>
+        <ul>
+            <li>PHP 5.3, 7.2, 8, Symfony 7, Doctrine, Phalcon, Laravel</li>
+            <li>PostgreSQL, MySQL, MongoDB</li>
+            <li>Redis, RabbitMQ</li>
+            <li>Swagger/OpenAPI</li>
+            <li>Git, Docker, Kubernetes</li>
+            <li>Event Sourcing, CQRS</li>
+        </ul>
+    </div>
     <div class="main" id="main">
         <div class="resume-description-en">
 Dynatech SIA, Riga, 2023 September --> now
@@ -211,12 +239,47 @@ Hobby
         let doc = document.getElementById(documentId);
         doc.classList.add("wrapper-printable");
         let tools = doc.getElementsByClassName("tools-container")[0];
-        tools.classList.add('tools-container-printable')
+        tools.classList.add('tools-container-printable');
+
+        // Expand all collapsible content before printing
+        let collapsibles = document.getElementsByClassName('collapsible');
+        let collapsibleStates = [];
+        for (let i = 0; i < collapsibles.length; i++) {
+            let header = collapsibles[i];
+            let content = header.nextElementSibling;
+            if (content.classList.contains('collapsible-content')) {
+                // Store current state
+                collapsibleStates.push({
+                    header: header,
+                    headerWasActive: header.classList.contains('active'),
+                    element: content,
+                    wasActive: content.classList.contains('active'),
+                    height: content.style.maxHeight
+                });
+
+                // Expand for printing
+                header.classList.add('active');
+                content.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
 
         window.print();
-        doc.classList.remove("wrapper-printable");
-        tools.classList.remove('tools-container-printable')
 
+        // Restore collapsible states after printing
+        for (let i = 0; i < collapsibleStates.length; i++) {
+            let state = collapsibleStates[i];
+            if (!state.wasActive) {
+                state.element.classList.remove('active');
+                state.element.style.maxHeight = state.height;
+            }
+            if (!state.headerWasActive) {
+                state.header.classList.remove('active');
+            }
+        }
+
+        doc.classList.remove("wrapper-printable");
+        tools.classList.remove('tools-container-printable');
     }
 
     function shareCV() {
@@ -241,4 +304,27 @@ Hobby
             translateCV(event.target)
         }
     );
+
+    // Initialize collapsible elements
+    let collapsibles = document.getElementsByClassName('collapsible');
+    for (let i = 0; i < collapsibles.length; i++) {
+        // Initialize all collapsible contents to be collapsed by default
+        let content = collapsibles[i].nextElementSibling;
+        if (content.classList.contains('collapsible-content')) {
+            content.style.maxHeight = 0;
+        }
+
+        collapsibles[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+            let content = this.nextElementSibling;
+            if (content.classList.contains('collapsible-content')) {
+                content.classList.toggle('active');
+                if (content.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            }
+        });
+    }
 </script>

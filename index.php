@@ -64,7 +64,7 @@
         <ul>
             <li>1. <a href="https://github.com/ilinevgeny/notification_system_sf_test">Example of CQRS pattern</a></li>
             <li>2. <a href=https://github.com/ilinevgeny/wtApp">Test application with DDD implementing</a></li>
-            <li>3. <a href="https://github.com/ilinevgeny/reconsiliation">Concept and example of Reconciliation process by Event sourcing pattern</a></li>
+            <li>3. <a href="https://github.com/ilinevgeny/reconciliation">Concept and example of Reconciliation process by Event sourcing pattern</a></li>
             <li>4. <a href="https://bitbucket.org/geirby/evolution_k8s/src/master/">Test with DevOps skills: Go clients, k8s, Kafka, Prometheus, Grafana from scratch</a></li>
             <li>5. <a href="https://github.com/ilinevgeny/transposeapp/">Test application with algorithm of transposition</a></li>
         </ul>

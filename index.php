@@ -71,7 +71,7 @@
     <div class="skills">
         <h4>Skills</h4>
         <ul>
-            <li>PHP 5.3, 7.2, 8, Symfony 7, Doctrine, Phalcon, Laravel</li>
+            <li>PHP 8.4, Symfony 7, Doctrine, Phalcon, Laravel</li>
             <li>PostgreSQL, MySQL, MongoDB</li>
             <li>Redis, RabbitMQ</li>
             <li>Swagger/OpenAPI</li>
@@ -83,7 +83,7 @@
         <div class="resume-description-en">
 Dynatech SIA, Riga, 2023 September --> now
     Software development:
-        -- PHP 5.3😭, PHP 7.2😅, PHP 8🤩 Symfony 7 😎, Doctrine, Postgresql, MongoDB, Swagger/OpenAPI
+        -- PHP 5.3 😭, PHP 7.2 😅, PHP 8.4 🤩 Symfony 7 😎, Doctrine, Postgresql, MongoDB, Swagger/OpenAPI
     Experience & Achievements:
             -- Banking transactions (Crassula), developing automated reconciliation
             -- scoring cards

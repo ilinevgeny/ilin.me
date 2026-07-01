@@ -54,7 +54,7 @@
     <div class="salary">
         <h4 class="collapsible">Salary</h4>
         <ul class="collapsible-content">
-            <li>EUR 4500 - 5000 gross</li>
+            <li>EUR 4300 - 5000 gross</li>
             <li>USD 5000 - 5200 gross</li>
         </ul>
     </div>

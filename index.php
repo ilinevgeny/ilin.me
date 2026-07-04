@@ -24,7 +24,7 @@
             <p class="subtitle">Senior PHP Backend Developer focused on Symfony, Doctrine, API design, legacy modernization, and reliable transactional backend systems.</p>
             <div class="actions">
                 <a class="btn btn-primary" href="/Evgeny_Ilin_CV_PHP_Backend_Developer.pdf" target="_blank">Download CV</a>
-                <a class="btn btn-secondary" href="mailto:evgeny@ilin.me">Contact me</a>
+                <a class="btn btn-secondary" href="mailto:evgeny@ilin.me" onclick="copyEmail(event, this)">Contact me</a>
             </div>
         </div>
         <div class="photo"><img src="img/me.jpg" alt="Evgeny Ilin" onerror="this.style.display='none';this.parentNode.textContent='EI'"></div>

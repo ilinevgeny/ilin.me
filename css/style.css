@@ -3,6 +3,7 @@
     --bg:#ffffff; --tag:#f1f4f8;
 }
 *{box-sizing:border-box}
+.print-only{display:none}
 body{
     margin:0; background:var(--bg); color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -17,6 +18,30 @@ h2{
     font-size:13px; text-transform:uppercase; letter-spacing:1.2px;
     color:var(--accent); margin:34px 0 14px; padding-bottom:6px;
     border-bottom:1px solid var(--line);
+}
+/* featured initiative */
+.agentic-highlight{
+    margin-top:18px; padding:17px 19px 18px;
+    border:1px solid #cbd8ef; border-left:4px solid var(--accent); border-radius:8px;
+    background:#f5f8fe;
+}
+.agentic-kicker{
+    color:var(--accent); font-size:11.5px; font-weight:700;
+    letter-spacing:.85px; text-transform:uppercase;
+}
+.agentic-highlight h3{font-size:18px; margin:3px 0 7px; letter-spacing:-.1px}
+.agentic-highlight p{font-size:14.5px; margin:0}
+.agentic-link{
+    display:inline-flex; align-items:center; gap:6px; margin-top:11px;
+    font-size:13.5px; font-weight:700;
+}
+.agentic-link:hover{text-decoration:none}
+.agentic-link span{transition:transform .15s ease}
+.agentic-link:hover span{transform:translateX(3px)}
+.agentic-tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px}
+.agentic-tags span{
+    padding:4px 9px; border:1px solid #d4dff2; border-radius:5px;
+    background:#fff; color:#334761; font-size:12.5px; font-weight:600;
 }
 /* header */
 .head{display:flex; gap:24px; align-items:flex-start; justify-content:space-between}
@@ -51,6 +76,11 @@ ul.bul li{margin:3px 0}
 /* projects */
 .proj{border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin-bottom:12px}
 .proj-title{font-weight:700; margin-bottom:6px}
+.live-badge{
+    display:inline-block; margin-left:7px; padding:2px 7px; border-radius:4px;
+    background:#e7f6ec; color:#267047; font-size:10.5px; font-weight:700;
+    letter-spacing:.35px; text-transform:uppercase; vertical-align:1px;
+}
 .proj-row{font-size:14px; margin:2px 0}
 .proj-row b{color:var(--muted); font-weight:700; display:inline-block; min-width:64px}
 .refs{margin:6px 0 0; padding-left:18px; font-size:14px}
@@ -74,9 +104,47 @@ h2.collapsible.active::after{content:'\2212'}
     .head{flex-direction:column-reverse; align-items:flex-start}
 }
 @media print{
+    @page{size:A4; margin:10mm 12mm}
+    body{font-size:11.5px; line-height:1.28}
     .actions{display:none}
+    .print-hidden{display:none !important}
+    .print-only{display:inline-block}
     a{color:var(--ink); text-decoration:none}
     .page{max-width:none; padding:0}
+    h1{font-size:24px; margin-bottom:4px}
+    h2{font-size:10.5px; margin:15px 0 7px; padding-bottom:4px}
+    .head{gap:18px}
+    .subtitle{font-size:12.5px; max-width:560px}
+    .photo{width:70px; height:70px}
+    .agentic-highlight{
+        margin-top:12px; padding:12px 14px 13px; break-inside:avoid;
+        print-color-adjust:exact; -webkit-print-color-adjust:exact
+    }
+    .agentic-kicker{font-size:9.5px}
+    .agentic-highlight h3{font-size:15px; margin:2px 0 5px}
+    .agentic-highlight p{font-size:11px}
+    .agentic-tags{gap:5px; margin-top:8px}
+    .agentic-tags span{padding:3px 7px; font-size:10px}
+    .contacts{gap:5px 18px}
+    .contacts a, .contacts span{padding:1px 0; font-size:11px}
+    .contacts a[href$=".pdf"]{display:none}
+    .skill-group{margin-bottom:8px; break-inside:avoid}
+    .skill-label{font-size:10.5px; margin-bottom:4px}
+    .tags, .interests{gap:5px}
+    .tag{padding:3px 7px; font-size:10.5px}
+    .job{margin-bottom:10px; break-inside:avoid}
+    .job-head{gap:3px 9px}
+    .job-meta, .stack{font-size:10.5px}
+    .stack{display:block; width:100%; margin:2px 0 4px}
+    ul.bul{display:block; width:100%; clear:both; margin-top:3px; padding-left:16px}
+    ul.bul li, .plain li, .refs li{margin:1px 0}
+    .badge{font-size:9px; padding:1px 6px}
+    .proj{padding:8px 10px; margin-bottom:6px; break-inside:avoid}
+    .proj-title{margin-bottom:4px}
+    .proj-row, .refs{font-size:10.5px}
+    .proj-row b{min-width:54px}
+    .foot{margin-top:14px; padding-top:7px; font-size:10px}
+    h2, .job-head, .proj-title{break-after:avoid}
     .collapsible-content{max-height:none !important; overflow:visible !important}
     h2.collapsible::after{display:none}
 }

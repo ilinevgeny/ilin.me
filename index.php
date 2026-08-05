@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Evgeny Ilin — Senior PHP Backend Developer | Symfony, Doctrine, APIs</title>
-    <meta name="description" content="Senior PHP Backend Developer with 9+ years of experience in Symfony, Doctrine, API design, legacy modernization, SQL optimization, and backend architecture.">
+    <title>Evgeny Ilin — Senior PHP Backend Developer | Agentic Engineering</title>
+    <meta name="description" content="Senior PHP Backend Developer with 9+ years of experience in Symfony, Doctrine, API design, legacy modernization, backend architecture, and agentic software engineering.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="yandex-verification" content="87086c37a62d6364" />
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Evgeny Ilin — Senior PHP Backend Developer">
-    <meta property="og:description" content="Symfony, Doctrine, APIs, legacy modernization, SQL optimization, backend architecture.">
+    <meta property="og:description" content="Symfony, Doctrine, APIs, legacy modernization, backend architecture, and agentic software engineering.">
     <meta property="og:url" content="https://ilin.me/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -21,7 +21,7 @@
     <div class="head">
         <div>
             <h1>Evgeny Ilin</h1>
-            <p class="subtitle">Senior PHP Backend Developer focused on Symfony, Doctrine, API design, legacy modernization, and reliable transactional backend systems.</p>
+            <p class="subtitle">Senior PHP Backend Developer focused on Symfony, Doctrine, API design, legacy modernization, reliable transactional backend systems, and agentic software engineering.</p>
             <div class="actions">
                 <a class="btn btn-primary" href="/Evgeny_Ilin_CV_PHP_Backend_Developer.pdf" target="_blank">Download CV</a>
                 <a class="btn btn-secondary" href="mailto:evgeny@ilin.me" onclick="copyEmail(event, this)">Contact me</a>
@@ -31,8 +31,8 @@
     </div>
 
     <!-- BOOKS -->
-    <h2>Books</h2>
-    <ol class="plain">
+    <h2 class="print-hidden">Books</h2>
+    <ol class="plain print-hidden">
         <li>Eric Evans — <i>Domain-Driven Design: Tackling Complexity in the Heart of Software</i></li>
         <li>Martin Fowler — <i>Refactoring</i></li>
         <li>Robert C. Martin — <i>Clean Code</i></li>
@@ -44,20 +44,34 @@
     <h2>Summary</h2>
     <p style="margin:0">Senior PHP Backend Developer with 9+ years of experience building and modernizing backend systems. Strong focus on Symfony, Doctrine, API design, legacy refactoring, SQL optimization, and transactional workflows.</p>
 
+    <section class="agentic-highlight" aria-labelledby="agentic-engineering-title">
+        <div class="agentic-kicker">Engineering initiative · Dynatech SIA</div>
+        <h3 id="agentic-engineering-title">Agentic Engineering</h3>
+        <p>Pioneered the adoption of agentic software engineering at Dynatech SIA. Independently designed and implemented an end-to-end agentic SDLC framework covering task decomposition, implementation, code review, testing, and delivery. Applied the framework to migrate part of a legacy system from Hack to PHP 8.4, introducing modern engineering standards and practices such as OpenAPI specifications and hexagonal architecture.</p>
+        <a class="agentic-link print-hidden" href="https://github.com/ilinevgeny/agentic-domain-workspace" target="_blank" rel="noopener noreferrer">Explore the Agentic Domain Workspace framework <span aria-hidden="true">→</span></a>
+        <div class="agentic-tags" aria-label="Agentic engineering focus areas">
+            <span>Agentic SDLC</span>
+            <span>AI coding agents</span>
+            <span>Quality gates</span>
+            <span>Legacy migration</span>
+        </div>
+    </section>
+
     <!-- CONTACTS -->
     <h2>Contacts</h2>
     <div class="contacts">
         <a href="mailto:evgeny@ilin.me">evgeny@ilin.me</a>
-        <a href="https://t.me/EvgenyIlin" target="_blank">Telegram: @EvgenyIlin</a>
-        <a href="https://github.com/ilinevgeny" target="_blank">GitHub: ilinevgeny</a>
+        <a class="print-hidden" href="https://t.me/EvgenyIlin" target="_blank">Telegram: @EvgenyIlin</a>
+        <a class="print-hidden" href="https://github.com/ilinevgeny" target="_blank">GitHub: ilinevgeny</a>
+        <a class="print-only" href="tel:+37126021018">Phone: +371 260 210 18</a>
         <a href="/Evgeny_Ilin_CV_PHP_Backend_Developer.pdf" target="_blank">Download CV</a>
     </div>
 
     <!-- SALARY (collapsed by default) -->
     <h2 class="collapsible">Salary</h2>
     <ul class="plain collapsible-content">
-        <li>EUR 4300 – 5000 gross</li>
-        <li>USD 5000 – 5200 gross</li>
+        <li>EUR 4800 – 5500 gross</li>
+        <li class="print-hidden">USD 5000 – 5200 gross</li>
     </ul>
 
     <!-- SKILLS -->
@@ -86,6 +100,7 @@
         <div class="job-head"><span class="job-co">Dynatech SIA</span><span class="job-meta">Riga · Sep 2023 – Present</span></div>
         <div class="stack">PHP 8.4, Symfony 7, Doctrine, PostgreSQL, MongoDB, OpenAPI</div>
         <ul class="bul">
+            <li>Applied an independently designed agentic SDLC framework to migrate part of a legacy system from Hack to PHP 8.4 and introduce OpenAPI specifications and hexagonal architecture.</li>
             <li>Developed automated reconciliation for banking transactions (Crassula), with idempotent, OpenAPI-contracted workflows.</li>
             <li>Built the API for the risk-processing core and implemented scoring cards.</li>
             <li>Developed the back office for a ticketing system.</li>
@@ -136,6 +151,15 @@
     <h2>Selected Projects</h2>
 
     <div class="proj">
+        <div class="proj-title">TrackMyEnergy <span class="live-badge">Live product</span></div>
+        <div class="proj-row"><b>Purpose</b> Helps users track daily activity time and personal energy capacity.</div>
+        <div class="proj-row"><b>Role</b> Creator and backend developer.</div>
+        <div class="proj-row"><b>Stack</b> PHP 8.5, Symfony 7.4 LTS, Doctrine ORM, PostgreSQL, Redis, Docker.</div>
+        <div class="proj-row"><b>Result</b> Designed, built, and deployed a production web application using DDD bounded contexts and automated quality checks.</div>
+        <div class="proj-row"><b>Live</b> <a href="https://trackmyenergy.life" target="_blank" rel="noopener noreferrer">trackmyenergy.life</a></div>
+    </div>
+
+    <div class="proj">
         <div class="proj-title">Legacy migration</div>
         <div class="proj-row"><b>Problem</b> Aging PHP codebases hard to maintain and extend.</div>
         <div class="proj-row"><b>Role</b> Backend developer.</div>
@@ -184,7 +208,7 @@
     </div>
 
     <div class="foot">
-        Career start: 2007 · Hobby: math, astrophysics, running, biking, diving
+        Hobby: math, astrophysics, running, biking, diving
     </div>
 
 </div>

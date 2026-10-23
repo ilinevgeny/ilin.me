@@ -1,0 +1,14 @@
+**
+!Dockerfile.production
+!index.php
+!favicon.ico
+!summary-card.html
+!Evgeny_Ilin_CV_PHP_Backend_Developer.pdf
+!css/
+!css/**
+!js/
+!js/**
+!img/
+!img/**
+!docker/
+!docker/nginx.production.conf

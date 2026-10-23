@@ -1,0 +1,34 @@
+name: ilin-static
+
+services:
+  web:
+    image: ilin-me-static:${ILIN_TAG:-local}
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+      args:
+        BUILD_VERSION: ${BUILD_VERSION:-}
+    ports:
+      - "127.0.0.1:18083:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m
+    cpus: "0.25"
+    pids_limit: 64
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

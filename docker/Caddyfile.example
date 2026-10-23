@@ -1,0 +1,19 @@
+ilin.me {
+    tls {
+        issuer acme {
+            disable_tlsalpn_challenge
+        }
+    }
+    header -Server
+    encode zstd gzip
+    reverse_proxy ilin-web:8080
+}
+
+www.ilin.me {
+    tls {
+        issuer acme {
+            disable_tlsalpn_challenge
+        }
+    }
+    redir https://ilin.me{uri} permanent
+}

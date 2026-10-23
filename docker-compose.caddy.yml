@@ -1,0 +1,12 @@
+services:
+  web:
+    networks:
+      default: {}
+      ilin_frontend:
+        aliases: [ilin-web]
+
+networks:
+  default: {}
+  ilin_frontend:
+    external: true
+    name: ilin_frontend

@@ -25,7 +25,7 @@ Production-образ содержит nginx и файлы сайта. При с
    docker compose -f docker-compose.production.yml ps
    ```
 
-   Ожидается HTTP 200 и состояние `healthy`. В `/tmp/ilin-static.html` ссылки на CSS/JS содержат одинаковую версию; PHP-блоков нет. Также доступны изображения, favicon и `/summary-card.html`.
+   Ожидается HTTP 200 и состояние `healthy`. В `/tmp/ilin-static.html` ссылки на CSS/JS содержат одинаковую версию; PHP-блоков нет. Также доступны изображения, favicon и `/summary-card.html`. Старый адрес `/index.php` перенаправляется на `/`.
 
 4. Остановить локальный контейнер:
 
